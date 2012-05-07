@@ -8,7 +8,6 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
-:x
 :q!
 
 # Search String History (newest to oldest):
@@ -20,179 +19,42 @@
 # Input Line History (newest to oldest):
 
 # Registers:
-""-	CHAR	0
-	 
+""1	LINE	0
+	set -g status-left '#[fg=colour235,bg=colour252,bold] ❐ #S
+"2	LINE	0
+	set -g message-attr bold
+"3	LINE	0
+	set -g message-bg colour221
+"4	LINE	0
+	set -g message-fg colour16
+"5	LINE	0
+	set -g pane-active-border-fg colour39
+"6	LINE	0
+	set -g pane-border-fg colour245
+"7	LINE	0
+	set -g window-status-activity-attr bold
+"8	LINE	0
+	set -g status-bg colour234
+"9	LINE	0
+	set -g status-fg white
+"-	CHAR	0
+	2
 
 # File marks:
-'0  2  0  ~/.vimrc
-'1  46  0  ~/.zshrc
-'2  43  0  ~/.zshrc
-'3  40  0  ~/.vimrc
-'4  346  161  ~/.vim/colors/idleFingers.vim
-'5  24  24  ~/Dropbox/MAMP/htdocs/senex-client/modules/database/config/database.php
-'6  5  24  ~/Dropbox/MAMP/htdocs/senex-client/.htaccess
-'7  12  0  ~/Dropbox/MAMP/htdocs/senex-client/.gitignore
-'8  10  0  ~/Dropbox/MAMP/htdocs/lts/.gitignore
-'9  8  16  ~/.zshrc
+'0  50  87  ~/.dotfiles/tmux.conf
 
 # Jumplist (newest first):
--'  2  0  ~/.vimrc
--'  1  0  ~/.vimrc
--'  46  0  ~/.zshrc
--'  43  0  ~/.zshrc
--'  8  16  ~/.zshrc
--'  40  0  ~/.vimrc
--'  346  161  ~/.vim/colors/idleFingers.vim
--'  1  0  ~/.vim/colors/idleFingers.vim
--'  24  24  ~/Dropbox/MAMP/htdocs/senex-client/modules/database/config/database.php
--'  1  0  ~/Dropbox/MAMP/htdocs/senex-client/modules/database/config/database.php
--'  5  24  ~/Dropbox/MAMP/htdocs/senex-client/.htaccess
--'  1  0  ~/Dropbox/MAMP/htdocs/senex-client/.htaccess
--'  12  0  ~/Dropbox/MAMP/htdocs/senex-client/.gitignore
--'  1  0  ~/Dropbox/MAMP/htdocs/senex-client/.gitignore
--'  10  0  ~/Dropbox/MAMP/htdocs/lts/.gitignore
--'  1  0  ~/Dropbox/MAMP/htdocs/lts/.gitignore
--'  1  0  ~/.zshrc
--'  1  0  ~/.gitconfig
--'  1  0  ~/.gitignore_global
--'  2  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  1  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  3  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  5  74  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  35  0  ~/.zshrc
--'  4  74  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  2  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  1  0  ~/.gitconfig
--'  1  0  ~/.gitignore_global
--'  2  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  1  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  3  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  5  74  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  4  74  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  2  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  10  0  ~/Dropbox/MAMP/htdocs/lts/.gitignore
--'  1  0  ~/Dropbox/MAMP/htdocs/lts/.gitignore
--'  1  0  ~/.gitconfig
--'  1  0  ~/.gitignore_global
--'  2  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  1  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  3  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  5  74  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  4  74  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  2  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  1  0  ~/.gitconfig
--'  1  0  ~/.gitignore_global
--'  2  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  1  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  3  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  5  74  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  4  74  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  2  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  12  0  ~/Dropbox/MAMP/htdocs/senex-client/.gitignore
--'  1  0  ~/Dropbox/MAMP/htdocs/senex-client/.gitignore
--'  10  0  ~/Dropbox/MAMP/htdocs/lts/.gitignore
--'  1  0  ~/Dropbox/MAMP/htdocs/lts/.gitignore
--'  1  0  ~/.gitconfig
--'  1  0  ~/.gitignore_global
--'  2  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  1  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  3  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  5  74  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  4  74  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  2  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  1  0  ~/.gitconfig
--'  1  0  ~/.gitignore_global
--'  2  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  1  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  3  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  5  74  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  4  74  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  2  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  10  0  ~/Dropbox/MAMP/htdocs/lts/.gitignore
--'  1  0  ~/Dropbox/MAMP/htdocs/lts/.gitignore
--'  1  0  ~/.gitconfig
--'  1  0  ~/.gitignore_global
--'  2  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  1  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  3  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  5  74  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  4  74  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  2  0  ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
--'  346  161  ~/.vim/colors/idleFingers.vim
--'  1  0  ~/.vim/colors/idleFingers.vim
--'  24  24  ~/Dropbox/MAMP/htdocs/senex-client/modules/database/config/database.php
--'  1  0  ~/Dropbox/MAMP/htdocs/senex-client/modules/database/config/database.php
--'  5  24  ~/Dropbox/MAMP/htdocs/senex-client/.htaccess
--'  1  0  ~/Dropbox/MAMP/htdocs/senex-client/.htaccess
--'  12  0  ~/Dropbox/MAMP/htdocs/senex-client/.gitignore
--'  1  0  ~/Dropbox/MAMP/htdocs/senex-client/.gitignore
--'  10  0  ~/Dropbox/MAMP/htdocs/lts/.gitignore
--'  1  0  ~/Dropbox/MAMP/htdocs/lts/.gitignore
--'  1  0  ~/.gitconfig
--'  1  0  ~/.gitignore_global
--'  46  0  ~/.zshrc
--'  43  0  ~/.zshrc
+-'  50  87  ~/.dotfiles/tmux.conf
+-'  1  0  ~/.dotfiles/tmux.conf
 
 # History of marks within files (newest to oldest):
 
-> ~/.vimrc
-	"	2	0
-	^	2	0
-	.	2	0
-	+	3	0
-	+	2	0
-
-> ~/.zshrc
-	"	46	0
-	^	46	0
-	.	45	14
-	+	8	14
-	+	34	118
-	+	8	11
-	+	43	38
-	+	40	0
-	+	41	0
-	+	42	0
-	+	43	0
-	+	23	0
-	+	43	35
-	+	45	14
-
-> ~/.vim/colors/idleFingers.vim
-	"	346	161
-	^	346	162
-	.	411	0
-	+	411	0
-
-> ~/Dropbox/MAMP/htdocs/senex-client/modules/database/config/database.php
-	"	24	24
-	^	24	25
-	.	24	25
-	+	24	25
-
-> ~/Dropbox/MAMP/htdocs/senex-client/.htaccess
-	"	5	24
-	^	5	25
-	.	5	24
-	+	5	24
-
-> ~/Dropbox/MAMP/htdocs/senex-client/.gitignore
-	"	12	0
-
-> ~/Dropbox/MAMP/htdocs/lts/.gitignore
-	"	10	0
-
-> ~/.gitconfig
-	"	1	0
-
-> ~/.gitignore_global
-	"	1	0
-
-> ~/Dropbox/MAMP/htdocs/senex/.git/COMMIT_EDITMSG
-	"	2	0
-	^	2	0
-	.	1	25
-	+	1	21
-	+	5	74
+> ~/.dotfiles/tmux.conf
+	"	50	87
+	^	50	88
+	.	50	60
+	+	19	0
+	+	18	0
 	+	1	0
-	+	1	25
+	+	19	0
+	+	50	60
