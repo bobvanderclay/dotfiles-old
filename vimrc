@@ -14,6 +14,7 @@ syntax on                             " Syntax highlighting.
 set background=dark                   " Inquiring plugins want to know.
 colorscheme solarized                 " Default colorscheme.
 set t_Co=256                          " Convince Vim it can use 256 colors inside Gnome Terminal.
+let g:solarized_termcolors=256
 
 set backspace=indent,eol,start        " Allow backspacing over everything in insert mode.
 set fillchars=vert:\                  " No pipes in vertical split separators.
