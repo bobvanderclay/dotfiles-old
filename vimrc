@@ -52,9 +52,11 @@ set incsearch                         " Search-as-you-type.
 set ignorecase                        " Case-insensitive…
 set smartcase                         " …unless phrase includes uppercase.
 
-" Hide away backup and swap files.
-set backupdir=~/.vim/backup
-set directory=~/.vim/backup
+" Hide away backup and swap files. Or just don't use them.
+" set backupdir=~/.vim/backup
+" set directory=~/.vim/backup
+set nobackup
+set noswapfile
 
 " Reload file without prompting if it has changed on disk.
 " Will still prompt if there is unsaved text in the buffer.
@@ -80,5 +82,7 @@ set magic                         " Allows pattern matching with special charact
 set history=1000                  " Keeps a thousand lines of history
 set ofu=syntaxcomplete#Complete   " To turn on omnicompletion
 
-
+" Keys and mapping
+" change the mapleader from \ to ,
+let mapleader=","
 

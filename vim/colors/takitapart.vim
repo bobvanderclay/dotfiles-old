@@ -2,6 +2,7 @@
 " Author:   Bob VanderClay <bob@high90.com>
 " License:  
 
+
 " Initialization
 " ---------------------------------------------------------------------
 set background=dark
@@ -12,8 +13,6 @@ if exists("syntax_on")
 endif
 let colors_name = "takitapart"
 
-
-       = ""
 
 " Color shortcuts
 " ---------------------------------------------------------------------
@@ -39,26 +38,30 @@ let s:mediumpurple    = "98"
 let s:brightpurple    = "189"
 let s:brightorange    = "208"
 let s:brightestorange = "214"
-let s:grey0           = "233"
-let s:grey1           = "235"
-let s:grey2           = "236"
-let s:grey3           = "239"
-let s:grey4           = "240"
-let s:grey5           = "241"
-let s:grey6           = "244"
-let s:grey7           = "245"
-let s:grey8           = "247"
-let s:grey9           = "250"
-let s:grey10          = "252"
+let s:darker_charcoal  = "233"
+let s:dark_charcoal    = "234"
+let s:charcoal         = "235"
+let s:light_charcoal   = "236"
+let s:lighter_charcoal = "237"
+let s:darker_stone     = "241"
+let s:dark_stone       = "242"
+let s:stone            = "243"
+let s:light_stone      = "244"
+let s:lighter_stone    = "245"
+let s:darker_snow      = "251"
+let s:dark_snow        = "252"
+let s:snow             = "253"
+let s:light_snow       = "254"
+let s:lighter_snow     = "255"
 
 
 " Background value based on termtrans setting "{{{
 " ---------------------------------------------------------------------
-if (has("gui_running") || g:solarized_termtrans == 0)
-    let s:back        = s:grey1
-else
-    let s:back        = "NONE"
-endif
+" if (has("gui_running"))
+    let s:back        = s:charcoal
+" else
+"    let s:back        = "NONE"
+" endif
 
 
 " Formatting options and null values for passthrough effect
@@ -101,17 +104,21 @@ exe "let s:bg_mediumpurple        	= ' ".s:vmode."bg=".s:mediumpurple     			."'
 exe "let s:bg_brightpurple        	= ' ".s:vmode."bg=".s:brightpurple     			."'"
 exe "let s:bg_brightorange        	= ' ".s:vmode."bg=".s:brightorange     			."'"
 exe "let s:bg_brightestorange     	= ' ".s:vmode."bg=".s:brightestorange  			."'"
-exe "let s:bg_grey0               	= ' ".s:vmode."bg=".s:grey0            			."'"
-exe "let s:bg_grey1               	= ' ".s:vmode."bg=".s:grey1            			."'"
-exe "let s:bg_grey2               	= ' ".s:vmode."bg=".s:grey2            			."'"
-exe "let s:bg_grey3               	= ' ".s:vmode."bg=".s:grey3            			."'"
-exe "let s:bg_grey4               	= ' ".s:vmode."bg=".s:grey4            			."'"
-exe "let s:bg_grey5               	= ' ".s:vmode."bg=".s:grey5            			."'"
-exe "let s:bg_grey6               	= ' ".s:vmode."bg=".s:grey6            			."'"
-exe "let s:bg_grey7               	= ' ".s:vmode."bg=".s:grey7            			."'"
-exe "let s:bg_grey8               	= ' ".s:vmode."bg=".s:grey8            			."'"
-exe "let s:bg_grey9               	= ' ".s:vmode."bg=".s:grey9         	    	."'"
-exe "let s:bg_grey10		    	= ' ".s:vmode."bg=".s:grey10 		 			."'"
+exe "let s:bg_darker_charcoal       = ' ".s:vmode."bg=".s:darker_charcoal           ."'"
+exe "let s:bg_dark_charcoal         = ' ".s:vmode."bg=".s:dark_charcoal             ."'"
+exe "let s:bg_charcoal              = ' ".s:vmode."bg=".s:charcoal                  ."'"
+exe "let s:bg_light_charcoal        = ' ".s:vmode."bg=".s:light_charcoal            ."'"
+exe "let s:bg_lighter_charcoal      = ' ".s:vmode."bg=".s:lighter_charcoal          ."'"
+exe "let s:bg_darker_stone          = ' ".s:vmode."bg=".s:darker_stone              ."'"
+exe "let s:bg_dark_stone            = ' ".s:vmode."bg=".s:dark_stone                ."'"
+exe "let s:bg_stone                 = ' ".s:vmode."bg=".s:stone                     ."'"
+exe "let s:bg_light_stone           = ' ".s:vmode."bg=".s:light_stone               ."'"
+exe "let s:bg_lighter_stone         = ' ".s:vmode."bg=".s:lighter_stone             ."'"
+exe "let s:bg_darker_snow           = ' ".s:vmode."bg=".s:darker_snow               ."'"
+exe "let s:bg_dark_snow             = ' ".s:vmode."bg=".s:dark_snow                 ."'"
+exe "let s:bg_snow                  = ' ".s:vmode."bg=".s:snow                      ."'"
+exe "let s:bg_light_snow            = ' ".s:vmode."bg=".s:light_snow                ."'"
+exe "let s:bg_lighter_snow          = ' ".s:vmode."bg=".s:lighter_snow              ."'"
 
 exe "let s:fg_none      			= ' ".s:vmode."fg=".s:none   					."'"
 exe "let s:fg_back      			= ' ".s:vmode."fg=".s:back   					."'"
@@ -135,17 +142,21 @@ exe "let s:fg_mediumpurple        	= ' ".s:vmode."fg=".s:mediumpurple     			."'
 exe "let s:fg_brightpurple        	= ' ".s:vmode."fg=".s:brightpurple     			."'"
 exe "let s:fg_brightorange        	= ' ".s:vmode."fg=".s:brightorange     			."'"
 exe "let s:fg_brightestorange     	= ' ".s:vmode."fg=".s:brightestorange  			."'"
-exe "let s:fg_grey0               	= ' ".s:vmode."fg=".s:grey0            			."'"
-exe "let s:fg_grey1               	= ' ".s:vmode."fg=".s:grey1            			."'"
-exe "let s:fg_grey2               	= ' ".s:vmode."fg=".s:grey2            			."'"
-exe "let s:fg_grey3               	= ' ".s:vmode."fg=".s:grey3            			."'"
-exe "let s:fg_grey4               	= ' ".s:vmode."fg=".s:grey4            			."'"
-exe "let s:fg_grey5               	= ' ".s:vmode."fg=".s:grey5            			."'"
-exe "let s:fg_grey6               	= ' ".s:vmode."fg=".s:grey6            			."'"
-exe "let s:fg_grey7               	= ' ".s:vmode."fg=".s:grey7            			."'"
-exe "let s:fg_grey8               	= ' ".s:vmode."fg=".s:grey8            			."'"
-exe "let s:fg_grey9               	= ' ".s:vmode."fg=".s:grey9         	    	."'"
-exe "let s:fg_grey10		    	= ' ".s:vmode."fg=".s:grey10 		 			."'"
+exe "let s:fg_darker_charcoal       = ' ".s:vmode."fg=".s:darker_charcoal           ."'"
+exe "let s:fg_dark_charcoal         = ' ".s:vmode."fg=".s:dark_charcoal             ."'"
+exe "let s:fg_charcoal              = ' ".s:vmode."fg=".s:charcoal                  ."'"
+exe "let s:fg_light_charcoal        = ' ".s:vmode."fg=".s:light_charcoal            ."'"
+exe "let s:fg_lighter_charcoal      = ' ".s:vmode."fg=".s:lighter_charcoal          ."'"
+exe "let s:fg_darker_stone          = ' ".s:vmode."fg=".s:darker_stone              ."'"
+exe "let s:fg_dark_stone            = ' ".s:vmode."fg=".s:dark_stone                ."'"
+exe "let s:fg_stone                 = ' ".s:vmode."fg=".s:stone                     ."'"
+exe "let s:fg_light_stone           = ' ".s:vmode."fg=".s:light_stone               ."'"
+exe "let s:fg_lighter_stone         = ' ".s:vmode."fg=".s:lighter_stone             ."'"
+exe "let s:fg_darker_snow           = ' ".s:vmode."fg=".s:darker_snow               ."'"
+exe "let s:fg_dark_snow             = ' ".s:vmode."fg=".s:dark_snow                 ."'"
+exe "let s:fg_snow                  = ' ".s:vmode."fg=".s:snow                      ."'"
+exe "let s:fg_light_snow            = ' ".s:vmode."fg=".s:light_snow                ."'"
+exe "let s:fg_lighter_snow          = ' ".s:vmode."fg=".s:lighter_snow              ."'"
 
 exe "let s:fmt_none     = ' ".s:vmode."=NONE".          " term=NONE".    "'"
 exe "let s:fmt_bold     = ' ".s:vmode."=NONE".s:b.      " term=NONE".s:b."'"
@@ -171,7 +182,7 @@ exe "hi! Normal"         .s:fmt_none   .s:fg_white  .s:bg_back
 
 "       *Comment         any comment
 " --------------------------------------------------------------
-exe "hi! Comment"        .s:fmt_ital   .s:fg_grey7 .s:bg_none
+exe "hi! Comment"        .s:fmt_ital   .s:fg_stone .s:bg_none
 
 
 "       *Constant        any constant
@@ -273,7 +284,7 @@ exe "hi! Todo"           .s:fmt_bold   .s:fg_darkestred .s:bg_brightestorange
 " Extended highlighting
 " ---------------------------------------------------------------------
 " Special non-text characters
-exe "hi! NonText"        .s:fmt_bold   .s:fg_grey3 .s:bg_grey2
+exe "hi! NonText"        .s:fmt_bold   .s:fg_charcoal .s:bg_light_charcoal
 	hi! link SpecialKey NonText
 
 " exe "hi! StatusLine"     .s:fmt_none   .s:fg_base02 .s:bg_base1
@@ -286,7 +297,7 @@ exe "hi! IncSearch"      .s:fmt_stnd   .s:fg_brightorange .s:bg_none
 exe "hi! Search"         .s:fmt_revr   .s:fg_brightestorange .s:bg_none
 exe "hi! MoreMsg"        .s:fmt_none   .s:fg_darkblue   .s:bg_none
 exe "hi! ModeMsg"        .s:fmt_none   .s:fg_darkblue   .s:bg_none
-exe "hi! LineNr"         .s:fmt_none   .s:fg_grey5 .s:bg_grey2
+exe "hi! LineNr"         .s:fmt_none   .s:fg_stone .s:bg_lighter_charcoal
 exe "hi! Question"       .s:fmt_bold   .s:fg_mediumcyan   .s:bg_none
 " exe "hi! VertSplit"      .s:fmt_bold   .s:fg_base00 .s:bg_base00
 exe "hi! Title"          .s:fmt_bold   .s:fg_brightorange .s:bg_none
@@ -355,7 +366,7 @@ hi! link phpFunctions Function
 
 " phpMethods
 " hi! link phpMethods Function
-exe "hi! phpMethods"        	   .s:fmt_none   .s:fg_grey9 .s:bg_none
+exe "hi! phpMethods"        	   .s:fmt_none   .s:fg_snow .s:bg_none
 
 " phpMethodsVar		->[methods]
 exe "hi! phpMethodsVar"           .s:fmt_none   .s:fg_mediumcyan .s:bg_none
@@ -433,7 +444,7 @@ hi! link phpParentError		phpParent
 " hi cssIdentifier      guifg=#D8D8D8
 " hi cssComment         guifg=#EEEEEE guibg=#575757
 " 
-" " Let right hand side be the same color
+" Let right hand side be the same color
 "     hi link cssFontAttr Constant
 "     hi link cssCommonAttr Constant
 "     hi link cssFontDescriptorAttr Constant
@@ -488,9 +499,22 @@ hi! link phpParentError		phpParent
 " Solarized
 " Ethan Schoonover <es@ethanschoonover.com>
 " http://ethanschoonover.com/solarized
+"
+" Thank you for provding a great template for a modular and 
+" flexible colorscheme. 
+"
 " 
 " Mustang
 " Henrique C. Alves <hcarvalhoalves@gmail.com>
 " http://hcalves.deviantart.com/art/Mustang-Vim-Colorscheme-98974484
+"
+" Color inspiration.
+"
+"
+" idlefingers
+" Damien Timewell <damien@fluidsyntax.com>
+" http://idlefingers.co.uk/
+"
+" Color inspiration.
 "
 "
