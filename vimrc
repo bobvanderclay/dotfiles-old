@@ -12,9 +12,8 @@ set encoding=utf-8                    " In case $LANG doesn't have a sensible va
 " Colors
 syntax on                             " Syntax highlighting.
 set background=dark                   " Inquiring plugins want to know.
-colorscheme solarized                 " Default colorscheme.
+colorscheme takitapart                " Default colorscheme.
 set t_Co=256                          " Convince Vim it can use 256 colors inside Gnome Terminal.
-let g:solarized_termcolors=256
 
 set backspace=indent,eol,start        " Allow backspacing over everything in insert mode.
 set fillchars=vert:\                  " No pipes in vertical split separators.
@@ -70,8 +69,6 @@ au WinEnter,BufWinEnter,CursorHold * checktime
 " commands, like :cnfile (mapped to g+) etc.
 set autowrite
 
-
-
 set hidden                        " Handle multiple buffers better.
 set title                         " Set the terminal's title
 
@@ -82,4 +79,6 @@ set magic                         " Allows pattern matching with special charact
 
 set history=1000                  " Keeps a thousand lines of history
 set ofu=syntaxcomplete#Complete   " To turn on omnicompletion
+
+
 
