@@ -52,3 +52,6 @@
 [submodule "vim/bundle/tagbar"]
 	path = vim/bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = git@github.com:takitapart/oh-my-zsh.git
