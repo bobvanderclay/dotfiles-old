@@ -85,4 +85,5 @@ set ofu=syntaxcomplete#Complete   " To turn on omnicompletion
 " Keys and mapping
 " change the mapleader from \ to ,
 let mapleader=","
+inoremap jj <Esc>
 
