@@ -44,3 +44,4 @@ bindkey '^N' history-search-forward
 
 setopt AUTO_CD
 
+TERM=xterm-256color
