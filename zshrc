@@ -42,6 +42,11 @@ bindkey '^S' history-incremental-search-forward
 bindkey '^P' history-search-backward
 bindkey '^N' history-search-forward
 
+# my aliases
+alias ht="cd ~/Dropbox/MAMP/htdocs"
+
 setopt AUTO_CD
 
 TERM=screen-256color
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
