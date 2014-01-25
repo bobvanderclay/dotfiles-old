@@ -5,6 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
+# ZSH_THEME="agnoster"
 ZSH_THEME="takitapart"
 
 # Set to this to use case-sensitive completion
@@ -29,7 +30,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/share/npm/bin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/local/share/npm/bin
 
 [[ -s "/Users/bob/.rvm/scripts/rvm" ]] && source "/Users/bob/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
@@ -44,9 +45,16 @@ bindkey '^N' history-search-forward
 
 # my aliases
 alias ht="cd ~/Dropbox/MAMP/htdocs"
+alias dev="cd ~/Development"
 
 setopt AUTO_CD
 
 TERM=screen-256color
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=/usr/local/php5/bin:$PATH # Updated PHP version.
+. ~/.nvm/nvm.sh
+
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
