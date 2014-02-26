@@ -49,8 +49,10 @@ alias dev="cd ~/Development"
 
 setopt AUTO_CD
 
-TERM=screen-256color
+TERM=xterm-256color
 
+PATH=$PATH:$HOME/bin # Add local bin.
+PATH=$PATH:$HOME/Dropbox/bin # Add dropbox bin.
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PATH=/usr/local/php5/bin:$PATH # Updated PHP version.
 . ~/.nvm/nvm.sh
